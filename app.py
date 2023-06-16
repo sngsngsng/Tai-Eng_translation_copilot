@@ -9,8 +9,8 @@ run_on_cloud = True
 csv_file = 'Taigi_translation_template.csv'
 download_file = 'Taigi_translation_test_download.csv'
 prompt_template_file = 'prompt_template_example.txt'
-output_format_example_file = 'output_format_example.json'
-function_call_for_ChatGPT = 'function_call_for_ChatGPT.json'
+#output_format_example_file = 'output_format_example.json'
+#function_call_for_ChatGPT = 'function_call_for_ChatGPT.json'
 
 #@st.cache_data
 def get_df():
@@ -129,13 +129,13 @@ if 'st.session_state.prompt_template_dict' not in st.session_state:
     with open( prompt_template_file, 'r') as f:
         st.session_state.prompt_template_dict = yaml.load(f, Loader=yaml.FullLoader)  
 # data format example
-if 'st.session_state.example_dict' not in st.session_state:
+#if 'st.session_state.example_dict' not in st.session_state:
     #load from json file, file_path = output_format_example_file
-    st.session_state.example_dict = json.load(open(output_format_example_file, 'r'))
+#    st.session_state.example_dict = json.load(open(output_format_example_file, 'r'))
 # function call interface for ChatGPT
-if 'st.session_state.function_call_for_ChatGPT' not in st.session_state:
+#if 'st.session_state.function_call_for_ChatGPT' not in st.session_state:
     #load from json file, file_path = function_call_for_ChatGPT
-    st.session_state.function_call_for_ChatGPT = json.load(open(function_call_for_ChatGPT, 'r'))
+#    st.session_state.function_call_for_ChatGPT = json.load(open(function_call_for_ChatGPT, 'r'))
                                               
 def clear_all_result():
 
