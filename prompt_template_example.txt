@@ -1,0 +1,22 @@
+prompt_template_to_Tokenize_Taigi: "You are a NLP expert, tokenize the sentence in CJK word, annotating the word class and Part of Speech in Universal POS standard, [[[example]]] give me [[[number]]] alternatives of tokenizing the sentence and make sure to put result [word, POS] pairs in json with key of alt n, no explanation necessary : "
+prompt_template_to_Tokenize_English: 'Translate the following list into English,
+  annotating the part of speech in Universal POS standard, 
+  [[[example]]]
+  give me [[[number]]] alternatives and make sure to put English words in python list(s) word by word respectively 
+  just give me the lists and no explanation necessary : '
+prompt_template_to_English: 'Translate the following list into [[[number]]] natural English sentence(s), 
+  [[[example]]] 
+  no explanation necessary : '
+prompt_template_to_alt_English: 'Enlight me with sentences of the same meanings with the following English sentence(s),
+  make it precise and concise,
+  give me [[[number]]] sentence(s) as alternatives '
+prompt_template_to_Japanese: 'Translate the below sentence into 
+  [[[number]]] Japanese sentence(s),
+  [[[example]]]
+  no explanation necessary : '
+prompt_template_to_ref_Chinese_dict: 'Translate the following list into English,
+  annotating the part of speech in Universal POS standard, 
+  [[[example]]]
+  word by word respectively, 
+  just give me the lists and no explanation necessary : '
+
